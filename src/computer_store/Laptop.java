@@ -1,3 +1,4 @@
+package computer_store;
 
 public class Laptop extends Computer {
 	private String colour;

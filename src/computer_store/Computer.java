@@ -1,3 +1,4 @@
+package computer_store;
 
 public abstract class Computer {
 	protected String manufacturer;

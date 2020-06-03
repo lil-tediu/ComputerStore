@@ -1,3 +1,4 @@
+package computer_store;
 
 public class Demo {
 	public static void main(String[] args) {
@@ -11,17 +12,22 @@ public class Demo {
 		Computer corsair = new Desktop( "Corsair", "APCOGMR93900XN2080S",  3000, 4.6f, 32)
 				.withVideoRAMMemory(8)
 				.withPowerSupplyWatts(750);
+		Computer lenovo = new Tablet("Lenovo", "Tab E8", 215, 1.3f, 1)
+				.withMemoryCardSlot(true)
+				.withOperatingSystem("Andorid");
 		
-		ComputerStore cs = new ComputerStore("Teodor's shop");
+		ComputerStore cs = new ComputerStore("Ardes");
 		cs.addCîmputer(asus);
 		cs.addCîmputer(acer);
 		cs.addCîmputer(corsair);
+		cs.addCîmputer(lenovo);
 		
 		System.out.println(cs.sortByPriceAscending());
 		
 		System.out.println(cs.sortByPriceDescending());
 		
 		cs.sellComputer(acer);
+		cs.sellComputer(lenovo);
 		cs.printAllComputers();
 		
 		System.out.println(cs.getBankBalance());

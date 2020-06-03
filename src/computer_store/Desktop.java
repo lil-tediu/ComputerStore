@@ -1,3 +1,4 @@
+package computer_store;
 
 public class Desktop extends Computer {	
 	private int videoRAMMemory;
