@@ -9,11 +9,16 @@ Every instance of Computer class has the following fields:
 - CPU speed
 - RAM memory  
 
-Every computer can be a laptop or a desktop machine.
+Every computer can be a laptop, a desktop machine or a tablet.
 
 Every desktop has the following fields apart from the computers':
 - video RAM memory
 - power supply in watts
+
+Every tablet has the following fileds apart from the computers':
+- operating system 
+- internal storage
+- does it have a sd card slot or not
 
 Every laptop has the following fields apart from the computers':
 - colour
