@@ -17,8 +17,6 @@ public abstract class Computer {
 		this.RAMMemory = RAMMemory;
 	}
 
-	
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -28,7 +26,7 @@ public abstract class Computer {
 		result = prime * result + Float.floatToIntBits(price);
 		return result;
 	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -53,15 +51,13 @@ public abstract class Computer {
 		return true;
 	}
 
-
-
 	@Override
 	public String toString() {
 		return "Computer [manufacturer=" + manufacturer + ", model=" + model + ", price=" + price + ", CPUSpeed="
 				+ CPUSpeed + ", RAMMemory=" + RAMMemory + "]";
 	}
-	
-	
 
-
+	public int getPrice() {
+		return price;
+	}
 }

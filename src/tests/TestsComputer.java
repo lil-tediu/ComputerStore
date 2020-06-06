@@ -103,8 +103,4 @@ public class TestsComputer {
 				", powerSupplyWatts=" + 500 + ", videoRAMMemory=" + 4 + "] \n";
 		assertNotEquals(acerPrinted, answer );
 	}
-
-
-
-
 }

@@ -23,6 +23,7 @@ public class ComputerStore {
 	public ComputerStore(String name) {
 		this.name = name;
 		this.computers = new HashSet<Computer>();
+		this.bankBalance = 0;
 	}
 	
 	public String getName() {
@@ -75,5 +76,9 @@ public class ComputerStore {
 		for (Computer computer : this.computers) {
 			System.out.println(computer);
 		}
+	}
+
+	public void setBankBalance(int bankBalance) {
+		this.bankBalance = bankBalance;
 	}
 }
